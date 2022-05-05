@@ -186,7 +186,7 @@ void Dispensing_Logic(void)
 					#if(1)
 //						if(Sys_RT_Status.System_Run_Mode==POWER_OFF  //没有达到自动
 //						||m_Pressure_Building_Timer>0								 //压力报警
-//						||Sys_RT_Status.Cartridge_Status==EMPTY			 //料空
+//						||Sys_RT_Status.Cartridge_Status==EMPTY			 //料没了
 //						)
 //						{
 //							Sys_RT_Status.CH_Dispensing_Status[CHx].CH_Dispensing_Step=DISPENSING_STOP;
