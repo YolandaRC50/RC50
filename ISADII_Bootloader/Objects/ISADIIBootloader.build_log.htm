@@ -1,0 +1,210 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Rody Peng, CD Taicen, LIC=CRMLQ-N9W1K-BV71G-V5IPN-V7YG3-ITRMC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+I:\ROBOT IDH\SVN\New Purge Tank ISAD II\ISAD II\ISAD_II_RTOS_ioT_By_Rod_New_PCB\ISADII_Bootloader\ISADII_Bootloader.uvprojx
+Project File Date:  04/14/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling iap.c...
+compiling stmflash.c...
+compiling usb_hcd.c...
+compiling usb_hcd_int.c...
+compiling usbh_core.c...
+compiling usb_core.c...
+compiling MAIN.c...
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+MAIN.c: 3 warnings, 0 errors
+compiling BSP.c...
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+BSP.c(41): warning:  #550-D: variable "sta"  was set but never used
+  	u8 sta=0;
+BSP.c: 4 warnings, 0 errors
+compiling usbh_hcs.c...
+compiling usbh_ioreq.c...
+compiling usbh_stdreq.c...
+compiling usbh_msc_bot.c...
+compiling usbh_msc_core.c...
+compiling usbh_msc_scsi.c...
+compiling usb_bsp.c...
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+USB\USB_APP\usb_bsp.c: 4 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usbh_usr.c...
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+USB\USB_APP\usbh_usr.c(81): warning:  #111-D: statement is unreachable
+  			break;
+USB\USB_APP\usbh_usr.c(79): warning:  #177-D: label "defult"  was declared but never referenced
+  			defult:
+USB\USB_APP\usbh_usr.c(149): warning:  #111-D: statement is unreachable
+  			break;
+USB\USB_APP\usbh_usr.c(174): warning:  #177-D: variable "res"  was declared but never referenced
+  			uint8_t res=0;
+USB\USB_APP\usbh_usr.c(175): warning:  #550-D: variable "precent"  was set but never used
+  			uint8_t precent; 
+USB\USB_APP\usbh_usr.c(147): warning:  #177-D: label "defult"  was declared but never referenced
+  			defult:
+USB\USB_APP\usbh_usr.c(301): warning:  #177-D: variable "last_pack_size"  was declared but never referenced
+  	uint16_t last_pack_size=(Index_Size-frist_pack_size)%BUF_LEN;
+USB\USB_APP\usbh_usr.c(322): warning:  #177-D: variable "res"  was declared but never referenced
+  	uint8_t res=0;
+USB\USB_APP\usbh_usr.c(323): warning:  #550-D: variable "precent"  was set but never used
+  	uint8_t precent; 
+USB\USB_APP\usbh_usr.c(490): warning:  #940-D: missing return statement at end of non-void function "Check_HMI_Image_Index" 
+  }
+USB\USB_APP\usbh_usr.c(611): warning:  #940-D: missing return statement at end of non-void function "UpdateHMI" 
+  }
+USB\USB_APP\usbh_usr.c(619): warning:  #940-D: missing return statement at end of non-void function "HUSB_BootLoader" 
+  }
+USB\USB_APP\usbh_usr.c(712): warning:  #940-D: missing return statement at end of non-void function "USH_User_App" 
+  } 
+USB\USB_APP\usbh_usr.c(631): warning:  #550-D: variable "MT_RT"  was set but never used
+  	FRESULT MT_RT;
+USB\USB_APP\usbh_usr.c: 18 warnings, 0 errors
+compiling hmi_APP.c...
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+HMI_DRIVE\src\hmi_APP.c: 3 warnings, 0 errors
+compiling cmd_queue.c...
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+HMI_DRIVE\src\cmd_queue.c(93): warning:  #550-D: variable "cmd_size"  was set but never used
+  	qsize cmd_size = 0;
+HMI_DRIVE\src\cmd_queue.c: 4 warnings, 0 errors
+compiling usart.c...
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+USART\usart.c(36): warning:  #940-D: missing return statement at end of non-void function "fputc" 
+  }
+USART\usart.c: 5 warnings, 0 errors
+compiling hmi_driver.c...
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+HMI_DRIVE\src\hmi_driver.c(1037): warning:  #1-D: last line of file ends without a newline
+  }
+HMI_DRIVE\src\hmi_driver.c: 4 warnings, 0 errors
+compiling diskio.c...
+compiling cc936.c...
+compiling exfuns.c...
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+FATFS\exfuns\exfuns.c: 4 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling fattester.c...
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\HMI_DRIVE\inc\hmi_driver.h(638): warning:  #1295-D: Deprecated declaration ReadImgIdx - give arg types
+  void ReadImgIdx(); 
+.\USART\usart.h(27): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+.\USART\usart.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+FATFS\exfuns\fattester.c(108): warning:  #550-D: variable "fn"  was set but never used
+  	char *fn;			 
+FATFS\exfuns\fattester.c(149): warning:  #550-D: variable "fn"  was set but never used
+      char *fn;   /* This function is assuming non-Unicode cfg. */
+FATFS\exfuns\fattester.c: 6 warnings, 0 errors
+compiling ff.c...
+compiling w25qxx.c...
+compiling spi.c...
+compiling stm32f4xx_it.c...
+compiling system_stm32f4xx.c...
+compiling misc.c...
+compiling stm32f4xx_flash.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_rcc.c...
+compiling malloc.c...
+compiling Bell.c...
+linking...
+Program Size: Code=33746 RO-data=175822 RW-data=272 ZI-data=1231472  
+FromELF: creating hex file...
+".\Objects\ISADIIBootloader.axf" - 0 Error(s), 55 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>

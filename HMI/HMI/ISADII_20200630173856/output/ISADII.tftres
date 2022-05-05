@@ -1,0 +1,51 @@
+<Resource>
+    <pages>
+        <page name="Load_0" id="0" />
+        <page name="SoftUpdate_1" id="1" />
+        <page name="Main_2" id="2" />
+        <page name="Setting_3" id="3" />
+        <page name="Setting_More_4" id="4" />
+        <page name="Systemini_5" id="5" />
+        <page name="Setting_Save_Dlg_6" id="6" />
+        <page name="Setting_More_Save_Dlg_7" id="7" />
+        <page name="keyboard0" id="8" />
+        <page name="Pressure_Alm" id="9" />
+        <page name="Debug_10" id="10" />
+        <page name="SettingComm_11" id="11" />
+        <page name="SettingComm_Save_Dlg_12" id="12" />
+        <page name="WIFISelect_13" id="13" />
+        <page name="Change_Pwd_14" id="14" />
+        <page name="Pwd_Input_15" id="15" />
+    </pages>
+    <images>
+        <image id="0" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Dlg\Load .png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="1" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\WIFI.ICON" width="35" height="31" crop="0" effect_left="0" effect_top="0" effect_width="35" effect_height="31" size="6510" />
+        <image id="2" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Ethernet.ICON" width="35" height="31" crop="0" effect_left="0" effect_top="0" effect_width="35" effect_height="31" size="6510" />
+        <image id="3" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Bluetooth.ICON" width="35" height="31" crop="0" effect_left="0" effect_top="0" effect_width="35" effect_height="31" size="6510" />
+        <image id="4" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Dlg\SoftUpdate.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="5" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Main\Main.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="6" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\CARTRIDGE_STATUS.ICON" width="128" height="31" crop="0" effect_left="0" effect_top="0" effect_width="128" effect_height="31" size="23808" />
+        <image id="7" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Main\Main_ON.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="8" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\CH_MODE.ICON" width="103" height="26" crop="0" effect_left="0" effect_top="0" effect_width="103" effect_height="26" size="10712" />
+        <image id="9" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\CH_STATUS.ICON" width="147" height="31" crop="0" effect_left="0" effect_top="0" effect_width="147" effect_height="31" size="36456" />
+        <image id="10" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\CH_PRESSURE_UNIT.ICON" width="29" height="13" crop="0" effect_left="0" effect_top="0" effect_width="29" effect_height="13" size="1508" />
+        <image id="11" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Setting_UNCheck.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="12" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Setting_Check.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="13" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\More\Setting_More_UNchecked.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="14" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\More\Setting_More_Checked.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="15" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Inf\Inf.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="16" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Dlg\Save Dialog .png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="17" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Keyup.png" width="320" height="240" crop="0" effect_left="0" effect_top="0" effect_width="320" effect_height="240" size="153600" />
+        <image id="18" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\KeyDown.png" width="320" height="240" crop="0" effect_left="0" effect_top="0" effect_width="320" effect_height="240" size="153600" />
+        <image id="19" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Dlg\Pressure_Alm_Dlg.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="20" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Debug\Debug.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="21" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Debug\Debug_on.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="22" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Comm\Comm.Setting_Disable.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="23" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Comm\Comm.Setting_GR.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="24" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Comm\Wifi_Select.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="25" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\WIFI_dBm.ICON" width="32" height="32" crop="0" effect_left="0" effect_top="0" effect_width="32" effect_height="32" size="8192" />
+        <image id="26" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Change PWD\ChangePWD.png" width="800" height="480" crop="0" effect_left="0" effect_top="0" effect_width="800" effect_height="480" size="768000" />
+        <image id="27" url="d:\工作\reservior\网络通（单位切换改）\isad_ii_rtos_iot_by_rod_new_pcb(20210615)\hmi\hmi\isadii_20200630173856\Images\Setting\Change PWD\PWD_Input.png" width="792" height="243" crop="0" effect_left="0" effect_top="0" effect_width="792" effect_height="243" size="384912" />
+    </images>
+    <waves />
+</Resource>
