@@ -1,0 +1,1449 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yu cuixiaogang, cc, LIC=P6F5U-SDA6P-RF9IZ-JJSJ1-L42U7-M4SRM
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\cuixiaogang\Desktop\网络通（传输格式单位切换改）\RC50\USER\ISAD_II_RTOS_By_Rody.uvprojx
+Project File Date:  07/30/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'ISADII'
+Note: source file '..\LWIP\lwip-1.4.1\src\core\timers.c' - object file renamed from '..\OBJ\timers.o' to '..\OBJ\timers_1.o'.
+compiling cmd_queue.c...
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\HMI_DRIVE\src\cmd_queue.c: 1 warning, 0 errors
+compiling App_Params.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\App_Params.c(213): warning:  #188-D: enumerated type mixed with another type
+  		Sys_Params.Channel_Param[CH1].Run_Mode_Params=Byte_to_int(m_Params_Buffer,&m_Index);
+..\APP\App_Params.c(218): warning:  #188-D: enumerated type mixed with another type
+  		Sys_Params.Channel_Param[CH2].Run_Mode_Params=Byte_to_int(m_Params_Buffer,&m_Index);
+..\APP\App_Params.c(238): warning:  #188-D: enumerated type mixed with another type
+  		Sys_Params.Pressure_Param.Pressure_Unit= Byte_to_int(m_Params_Buffer,&m_Index) ; 
+..\APP\App_Params.c(251): warning:  #188-D: enumerated type mixed with another type
+  		Sys_Params.LowSensor_Enable=Byte_to_int(m_Params_Buffer,&m_Index);  
+..\APP\App_Params.c(265): warning:  #188-D: enumerated type mixed with another type
+  		Sys_Params.IOT_Params.Commication_Mode= Byte_to_int(m_Params_Buffer,&m_Index); 
+..\APP\App_Params.c(400): warning:  #550-D: variable "__RT"  was set but never used
+  	 POWER_STATUS __RT=POWER_ON;
+..\APP\App_Params.c: 10 warnings, 0 errors
+compiling BSP.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\BSP.c: 20 warnings, 0 errors
+compiling App_Comm.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\App_Comm.c(102): warning:  #177-D: variable "p_array_char"  was declared but never referenced
+  	char *p_array_char;
+..\APP\App_Comm.c: 22 warnings, 0 errors
+compiling hmi_driver.c...
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(75): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  		TX_8(*str);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(85): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  		TX_8(pData[i]);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(94): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  		TX_16(pData[i]);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(100): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(102): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(107): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(110): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(115): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(118): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(123): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(126): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(131): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(134): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(139): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(144): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(149): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(151): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(156): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(160): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(165): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(170): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(175): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(179): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(184): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(191): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(196): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(203): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(208): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(212): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(217): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(223): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(228): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(238): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(243): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(250): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(255): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(259): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(264): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(270): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(275): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(279): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(284): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(289): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(294): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(299): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(304): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(309): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(314): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(320): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(325): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(328): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(333): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(336): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(341): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(346): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(351): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(356): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(361): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(368): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(373): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(379): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(384): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(390): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(395): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(401): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(406): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(412): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(417): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(420): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(425): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(428): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(433): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(439): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(455): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(458): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(463): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(465): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(470): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(472): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(477): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(483): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(488): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(494): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(499): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(502): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(507): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(510): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(515): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(518): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(523): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(527): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(532): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(535): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(540): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(548): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(553): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(557): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(562): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(566): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(571): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(574): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(579): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(583): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(588): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(591): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(596): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(602): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(607): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(613): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(618): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(624): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(629): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(635): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(640): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(646): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(651): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(657): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(662): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(668): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(673): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(679): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(684): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(690): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(695): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(700): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(705): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(711): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(716): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(721): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(726): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(731): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(736): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(741): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(746): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(752): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(757): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(762): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(767): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(772): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(777): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(784): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(789): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(795): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(800): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(808): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(813): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(819): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(824): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(833): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(838): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(846): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(853): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(860): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(867): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(885): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(892): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	TX_16(control_id);
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(899): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(899): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(904): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(910): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(915): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(920): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(925): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(930): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(935): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(940): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(945): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(951): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(956): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(962): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(967): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(971): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(976): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(980): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(985): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(992): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(997): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(1005): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(1015): warning:  #223-D: function "HMI_SendSingleChar" declared implicitly
+  	BEGIN_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(1017): warning:  #223-D: function "delay_ms" declared implicitly
+  	END_CMD();
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c(1079): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\HMI_DRIVE\src\hmi_driver.c: 182 warnings, 0 errors
+compiling Main.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\Main.c: 20 warnings, 0 errors
+compiling hmi_APP.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1098): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					if(state && Sys_Params.Pressure_Param.TargetPreessure>0.1) 
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1103): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							Sys_Params.Pressure_Param.TargetPreessure-0.05; 
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1123): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							Sys_Params.Pressure_Param.TargetPreessure+0.05; 
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					if(state && Sys_Params.Pressure_Param.TargetPreessure_Range>0.1) 
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1821): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  					Sys_Params.Low_to_Empty_Counter=(uint16_t)(value_double+(0.5));
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1886): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						Sys_Params.Pressure_Param.Calibration_Set_Param.Analog_1_Value=(value_double+(0.005));
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(1895): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  						Sys_Params.Pressure_Param.Calibration_Set_Param.Analog_2_Value=(value_double+(0.005));
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(12): warning:  #177-D: variable "test_value"  was declared but never referenced
+  static int32_t test_value = 0;//测试值
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c(14): warning:  #177-D: variable "Level_Vol_Enable_Counter"  was declared but never referenced
+  static uint8_t Level_Vol_Enable_Counter=0;	
+..\HARDWARE\HMI_DRIVE\src\hmi_APP.c: 29 warnings, 0 errors
+compiling APP.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\APP\APP.c(156): warning:  #188-D: enumerated type mixed with another type
+  				if (Sys_RT_Status.CH_Manuan_Run_Mode[CHx] == POWER_ON || PURGE_IO_STATUS(CHx))
+..\APP\APP.c(159): warning:  #188-D: enumerated type mixed with another type
+  					DISPENSING_RUN(CHx);
+..\APP\APP.c(164): warning:  #188-D: enumerated type mixed with another type
+  					DISPENSING_STOP(CHx);
+..\APP\APP.c(194): warning:  #188-D: enumerated type mixed with another type
+  					if (m_Last_Cycle_DI_Dispensing_Status[CHx] != DISPENSING_IO_STATUS(CHx) || m_Last_Cycle_Manual_Status[CHx] != CHx_Manual_Dispensing[CHx])
+..\APP\APP.c(196): warning:  #188-D: enumerated type mixed with another type
+  						m_Last_Cycle_DI_Dispensing_Status[CHx] = DISPENSING_IO_STATUS(CHx);
+..\APP\APP.c(197): warning:  #188-D: enumerated type mixed with another type
+  						m_Last_Cycle_Manual_Status[CHx] = CHx_Manual_Dispensing[CHx];
+..\APP\APP.c(201): warning:  #188-D: enumerated type mixed with another type
+  					if ((DISPENSING_IO_STATUS(CHx) == POWER_ON || CHx_Manual_Dispensing[CHx] == POWER_ON) && Sys_RT_Status.Cartridge_Status != EMPTY) //锟较匡拷)
+..\APP\APP.c(205): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_RUN(CHx);
+..\APP\APP.c(209): warning:  #188-D: enumerated type mixed with another type
+  						if (Sys_RT_Status.Cartridge_Status == LOWER && Sys_RT_Status.Lower_Empty_Counter > 0 && (m_Last_DI_Dispensing_Status[CHx] == POWER_ON && DISPENSING_IO_STATUS(CHx) == POWER_OFF && CHx_Manual_Dispensing[CHx] == POWER_OFF))
+..\APP\APP.c(219): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_STOP(CHx);
+..\APP\APP.c(230): warning:  #188-D: enumerated type mixed with another type
+  							((m_Last_DI_Dispensing_Status[CHx] == POWER_OFF && DISPENSING_IO_STATUS(CHx) == POWER_ON) || CHx_Manual_Dispensing[CHx] == POWER_ON) && Sys_RT_Status.Cartridge_Status != EMPTY)
+..\APP\APP.c(232): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							Sys_RT_Status.CH_Dispensing_Status[CHx].HEAD_COUNT_DOWN = Sys_Params.Channel_Param[CHx].Head_Time * 100.0;
+..\APP\APP.c(233): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							Sys_RT_Status.CH_Dispensing_Status[CHx].DISPENSING_COUNT_DOWN = Sys_Params.Channel_Param[CHx].Timer * 100.0;
+..\APP\APP.c(234): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  							Sys_RT_Status.CH_Dispensing_Status[CHx].TAIL_COUNT_DOWN = Sys_Params.Channel_Param[CHx].Tail_Time * 100.0;
+..\APP\APP.c(245): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_STOP(CHx);
+..\APP\APP.c(251): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_STOP(CHx);
+..\APP\APP.c(258): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_RUN(CHx);
+..\APP\APP.c(264): warning:  #188-D: enumerated type mixed with another type
+  						DISPENSING_RUN(CHx);
+..\APP\APP.c(286): warning:  #188-D: enumerated type mixed with another type
+  		m_Last_DI_Dispensing_Status[CHx] = DISPENSING_IO_STATUS(CHx) || CHx_Manual_Dispensing[CHx];
+..\APP\APP.c(286): warning:  #188-D: enumerated type mixed with another type
+  		m_Last_DI_Dispensing_Status[CHx] = DISPENSING_IO_STATUS(CHx) || CHx_Manual_Dispensing[CHx];
+..\APP\APP.c(554): warning:  #550-D: variable "_Recv_Finish"  was set but never used
+  				uint8_t _Recv_Finish = 0;
+..\APP\APP.c(1246): warning:  #188-D: enumerated type mixed with another type
+  				m_Last_DI_Pressure_Enable_Status = CHECK_PRESSURE_ENABLE;
+..\APP\APP.c(1252): warning:  #188-D: enumerated type mixed with another type
+  			m_Last_DI_Pressure_Enable_Status = CHECK_PRESSURE_ENABLE;
+..\APP\APP.c(1271): warning:  #188-D: enumerated type mixed with another type
+  				m_Last_DI_Run_Stop_Status = CHECK_RUN_STOP;
+..\APP\APP.c(1277): warning:  #188-D: enumerated type mixed with another type
+  			m_Last_DI_Run_Stop_Status = CHECK_RUN_STOP;
+..\APP\APP.c(1427): warning:  #177-D: variable "i"  was declared but never referenced
+  	uint16_t i = 0;
+..\APP\APP.c(2137): warning:  #111-D: statement is unreachable
+  				break;
+..\APP\APP.c(40): warning:  #177-D: variable "Swtmr1_Handle"  was declared but never referenced
+  static TimerHandle_t Swtmr1_Handle = NULL;
+..\APP\APP.c: 48 warnings, 0 errors
+compiling Bell.c...
+..\HARDWARE\Other\Bell\Bell.c(24): warning:  #111-D: statement is unreachable
+  	if(cmd)
+..\HARDWARE\Other\Bell\Bell.c: 1 warning, 0 errors
+compiling led.c...
+compiling hmi_usart.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\src\hmi_usart.c: 21 warnings, 0 errors
+compiling w25qxx.c...
+..\HARDWARE\Flash\w25qxx.c(250): warning:  #223-D: function "delay_us" declared implicitly
+      delay_us(3);                               //等待TPD  
+..\HARDWARE\Flash\w25qxx.c(258): warning:  #223-D: function "delay_us" declared implicitly
+      delay_us(3);                               //等待TRES1
+..\HARDWARE\Flash\w25qxx.c: 2 warnings, 0 errors
+compiling 24cxx.c...
+..\HARDWARE\EEprom\24cxx.c(61): warning:  #223-D: function "delay_ms" declared implicitly
+  	delay_ms(10);	 
+..\HARDWARE\EEprom\24cxx.c: 1 warning, 0 errors
+compiling EEP_I2C.c...
+compiling Flash_spi.c...
+compiling lan8720.c...
+..\HARDWARE\ETHERNET\lan8720.c(266): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\ETHERNET\lan8720.c: 1 warning, 0 errors
+compiling DHTxx.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.c: 21 warnings, 0 errors
+compiling Pressure.c...
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.c(224): warning:  #940-D: missing return statement at end of non-void function "getOutputPercent" 
+  }
+..\HARDWARE\Pressure\Pressure.c(257): warning:  #1-D: last line of file ends without a newline
+   
+..\HARDWARE\Pressure\Pressure.c: 22 warnings, 0 errors
+compiling GPIO.c...
+..\HARDWARE\GPIO\gpio.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\gpio.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.c(276): warning:  #188-D: enumerated type mixed with another type
+  		_Power_Status=(GPIO_IN[DI_FOOT_SWITCH_1].GPIO_Value)||(GPIO_IN[DI_CHANNEL_SWITCH_1].GPIO_Value);
+..\HARDWARE\GPIO\GPIO.c(280): warning:  #188-D: enumerated type mixed with another type
+  		_Power_Status=(GPIO_IN[DI_FOOT_SWITCH_2].GPIO_Value||GPIO_IN[DI_CHANNEL_SWITCH_2].GPIO_Value);
+..\HARDWARE\GPIO\GPIO.c(291): warning:  #188-D: enumerated type mixed with another type
+  		_Power_Status=(GPIO_IN[DI_PURGE_SWITCH_1].GPIO_Value);
+..\HARDWARE\GPIO\GPIO.c(295): warning:  #188-D: enumerated type mixed with another type
+  		_Power_Status=(GPIO_IN[DI_PURGE_SWITCH_2].GPIO_Value);
+..\HARDWARE\GPIO\GPIO.c: 25 warnings, 0 errors
+compiling bsp_esp8266.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\COMM\bsp_esp8266.c: 20 warnings, 0 errors
+compiling bsp_hc05.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\COMM\bsp_hc05.c: 20 warnings, 0 errors
+compiling bsp_ethernet.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\COMM\bsp_ethernet.c: 20 warnings, 0 errors
+assembling startup_stm32f40_41xxx.s...
+compiling sys.c...
+compiling delay.c...
+compiling Timer.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\Timer\Timer.c(89): warning:  #1-D: last line of file ends without a newline
+  }
+..\SYSTEM\Timer\Timer.c: 2 warnings, 0 errors
+compiling bsp_comm.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\HARDWARE\COMM\bsp_comm.c(354): warning:  #550-D: variable "data"  was set but never used
+  	u16 data;
+..\HARDWARE\COMM\bsp_comm.c(425): warning:  #940-D: missing return statement at end of non-void function "Wifi_Send" 
+   }
+..\HARDWARE\COMM\bsp_comm.c(734): warning:  #550-D: variable "data"  was set but never used
+  	u16 data;
+..\HARDWARE\COMM\bsp_comm.c(805): warning:  #940-D: missing return statement at end of non-void function "Bluetooth_Send" 
+   }
+..\HARDWARE\COMM\bsp_comm.c(877): warning:  #177-D: variable "retry"  was declared but never referenced
+      u8 retry=0;
+..\HARDWARE\COMM\bsp_comm.c: 25 warnings, 0 errors
+compiling stm32f4xx_gpio.c...
+compiling misc.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_usart.c...
+compiling stm32f4xx_rcc.c...
+compiling usart.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SYSTEM\usart\usart.c: 20 warnings, 0 errors
+compiling stm32f4xx_spi.c...
+compiling stm32f4xx_adc.c...
+compiling stm32f4xx_i2c.c...
+compiling stm32f4xx_dac.c...
+compiling stm32f4xx_dcmi.c...
+compiling stm32f4xx_dma.c...
+compiling stm32f4xx_sdio.c...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4x7_eth.c...
+compiling malloc.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling shell.c...
+compiling shell_cmd_list.c...
+compiling shell_ext.c...
+compiling port.c...
+compiling stm32f4xx_it.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling system_stm32f4xx.c...
+compiling cc936.c...
+compiling ff.c...
+compiling diskio.c...
+..\FATFS\diskio.c(128): warning:  #177-D: variable "status"  was declared but never referenced
+  	DRESULT status = RES_PARERR;
+..\FATFS\diskio.c(129): warning:  #177-D: variable "SD_state"  was declared but never referenced
+  	SD_Error SD_state = SD_OK;
+..\FATFS\diskio.c: 2 warnings, 0 errors
+compiling sdio_sdcard.c...
+compiling def.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\def.c: 1 warning, 0 errors
+compiling dhcp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\dhcp.c: 1 warning, 0 errors
+compiling etharp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\netif\etharp.c: 1 warning, 0 errors
+compiling dns.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\dns.c: 1 warning, 0 errors
+compiling ethernetif.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\LWIP\lwip-1.4.1\src\netif\ethernetif.c: 20 warnings, 0 errors
+compiling lwip_sys.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\lwip_sys.c: 1 warning, 0 errors
+compiling mem.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\mem.c: 1 warning, 0 errors
+compiling init.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\init.c: 1 warning, 0 errors
+compiling pbuf.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\pbuf.c: 1 warning, 0 errors
+compiling memp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\memp.c: 1 warning, 0 errors
+compiling netif.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\netif.c: 1 warning, 0 errors
+compiling stats.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\stats.c: 1 warning, 0 errors
+compiling raw.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\raw.c: 1 warning, 0 errors
+compiling timers.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\timers.c: 1 warning, 0 errors
+compiling udp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\udp.c: 1 warning, 0 errors
+compiling tcp_in.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\tcp_in.c: 1 warning, 0 errors
+compiling tcp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\tcp.c: 1 warning, 0 errors
+compiling tcp_out.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c(845): warning:  #550-D: variable "tcphdr"  was set but never used
+    struct tcp_hdr *tcphdr;
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c(1367): warning:  #550-D: variable "tcphdr"  was set but never used
+    struct tcp_hdr *tcphdr;
+..\LWIP\lwip-1.4.1\src\core\tcp_out.c: 3 warnings, 0 errors
+compiling autoip.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\autoip.c: 1 warning, 0 errors
+compiling icmp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\icmp.c: 1 warning, 0 errors
+compiling inet.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\inet.c: 1 warning, 0 errors
+compiling igmp.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\igmp.c: 1 warning, 0 errors
+compiling ip_addr.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\ip_addr.c: 1 warning, 0 errors
+compiling ip.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\ip.c: 1 warning, 0 errors
+compiling inet_chksum.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\inet_chksum.c: 1 warning, 0 errors
+compiling ip_frag.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\core\ipv4\ip_frag.c: 1 warning, 0 errors
+compiling api_lib.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\api_lib.c: 1 warning, 0 errors
+compiling err.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\err.c: 1 warning, 0 errors
+compiling netdb.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\netdb.c: 1 warning, 0 errors
+compiling netifapi.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\netifapi.c: 1 warning, 0 errors
+compiling netbuf.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\netbuf.c: 1 warning, 0 errors
+compiling api_msg.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\api_msg.c: 1 warning, 0 errors
+compiling sys_arch.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\arch\sys_arch.c: 1 warning, 0 errors
+compiling tcpip.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\tcpip.c: 1 warning, 0 errors
+compiling sockets.c...
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\LWIP\lwip-1.4.1\src\api\sockets.c: 1 warning, 0 errors
+compiling file_operate.c...
+..\SYSTEM\Timer\timer.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\TemperatureHumidity\DHTxx.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\Pressure\Pressure.h(51): warning:  #1295-D: Deprecated declaration SetPressureSensorTargetValue - give arg types
+  void  SetPressureSensorTargetValue();
+..\HARDWARE\GPIO\GPIO.h(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include "APP_Params.h";	    
+..\LWIP\arch/cc.h(90): warning:  #1-D: last line of file ends without a newline
+  #endif /* __CC_H__ */
+..\APP\APP_Params.h(478): warning:  #1295-D: Deprecated declaration LoadSystemParams - give arg types
+  void LoadSystemParams();
+..\APP\APP_Params.h(479): warning:  #1295-D: Deprecated declaration SaveSystemParams - give arg types
+  void SaveSystemParams();
+..\APP\APP_Params.h(481): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\GPIO\GPIO.h(335): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(19): warning:  #1295-D: Deprecated declaration HMI_USART_Init - give arg types
+  void HMI_USART_Init();
+..\HARDWARE\HMI_DRIVE\inc\hmi_usart.h(21): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\HMI_DRIVE\inc\hmi_driver.h(641): warning:  #1295-D: Deprecated declaration GetRTCTime - give arg types
+  void GetRTCTime();
+..\HARDWARE\COMM\bsp_comm.h(135): warning:  #1295-D: Deprecated declaration lwip_comm_default_ip_set - give arg types
+  void lwip_comm_default_ip_set();
+..\APP\App_Comm.h(7): warning:  #1295-D: Deprecated declaration Communication_Param_Init - give arg types
+  void Communication_Param_Init();
+..\APP\App_Comm.h(9): warning:  #1295-D: Deprecated declaration communication_send - give arg types
+  void communication_send();
+..\APP\App_Comm.h(10): warning:  #1295-D: Deprecated declaration communication_back_poll - give arg types
+  int communication_back_poll();
+..\APP\App_Comm.h(11): warning:  #1295-D: Deprecated declaration string_handle - give arg types
+  void string_handle();
+..\APP\App_Comm.h(12): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.h(12): warning:  #1295-D: Deprecated declaration Load_Cread_LogFolder - give arg types
+  int Load_Cread_LogFolder();
+..\FILE-OPERATE\file_operate.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FILE-OPERATE\file_operate.c(60): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(63): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(101): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(105): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(116): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(120): warning:  #111-D: statement is unreachable
+  			break;
+..\FILE-OPERATE\file_operate.c(217): warning:  #940-D: missing return statement at end of non-void function "Load_Cread_LogFolder" 
+  }
+..\FILE-OPERATE\file_operate.c(235): warning:  #940-D: missing return statement at end of non-void function "file_write" 
+  }
+..\FILE-OPERATE\file_operate.c(248): warning:  #940-D: missing return statement at end of non-void function "file_read" 
+  }
+..\FILE-OPERATE\file_operate.c: 30 warnings, 0 errors
+linking...
+Program Size: Code=120868 RO-data=178236 RW-data=1432 ZI-data=839648  
+FromELF: creating hex file...
+After Build - User command #1: C:\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o ..\BIN\ISADIIMCU.bin ..\OBJ\ISADIIMCU.axf
+"..\OBJ\ISADIIMCU.axf" - 0 Error(s), 621 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil.STM32F4xx_DFP.1.0.8
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:35
+</pre>
+</body>
+</html>

@@ -631,7 +631,7 @@ S_PRESSURE
 								\"R_TARGET_PRESSURE\": {\"TARGET_PRESSURE\":%.2f} \
 								\"R_PRESSURE_RANGE\": {\"PRESSURE_RANGE\":%.2f} \
 								\"R_PRESSURE_UNIT\": {\"R_PRESSURE_UNIT\":%s} \
-								\"R_LOW_LEVEL_COUNT\": {\"LOW_LEVEL_COUNT\":%d} \			
+								\"R_LOW_LEVEL_COUNT\": {\"LOW_LEVEL_COUNT\":%d} \
 								\"R_LOW_LEVEL_EN\": {\"R_LOW_LEVEL_EN\":%s} \
 								\"R_CH1_PURGE\": {\"R_CH1_PURGE\":%s} \
 								\"R_CH2_PURGE\": {\"R_CH2_PURGE\":%s} \
