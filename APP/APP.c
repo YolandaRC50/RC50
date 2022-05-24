@@ -90,7 +90,7 @@ void TIM4_IRQHandler_10MS(void)
 						Sys_RT_Status.Cartridge_Status == LOWER && Sys_RT_Status.Lower_Empty_Counter > 0)
 					{
 						if (Sys_Params.LowSensor_Enable == POWER_ON)
-							Sys_RT_Status.Lower_Empty_Counter--;
+							Sys_RT_Status.Lower_Empty_Counter--;                             //COUNT CYCLE MINUS AFTER DISPENSING YOLANDA
 						else
 							Sys_RT_Status.Lower_Empty_Counter = 10;
 					}

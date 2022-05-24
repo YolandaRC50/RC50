@@ -475,7 +475,7 @@ void UpdateUI(void)
 				if(Sys_Params.LowSensor_Enable==POWER_ON 
 					&& Sys_RT_Status.Cartridge_Status!=FULL)
 				{ 
-					SetTextValueint32_t(current_screen_id,18,Sys_RT_Status.Lower_Empty_Counter);
+					SetTextValueint32_t(current_screen_id,18,Sys_RT_Status.Lower_Empty_Counter);   //MAIN PAGE YOLANDA
 				}
 				
 				if(Sys_Params.Channel_Param[CH1].Run_Mode_Params==TIMER)
