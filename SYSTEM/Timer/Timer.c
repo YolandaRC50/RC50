@@ -38,7 +38,7 @@ void TIMx_IRQHandler(void)
 		
 		if((m_Timer_Counter+1)%100==0)
 		{ 
-			TIMx_IRQHandler_100MS();
+			//TIMx_IRQHandler_100MS();
 			TIMx_IRQHandler_1S();
 			m_Timer_Counter=0;
 		}

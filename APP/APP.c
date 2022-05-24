@@ -48,11 +48,11 @@ static TimerHandle_t Swtmr1_Handle = NULL;
 /////////////
 void TIMx_IRQHandler_10MS(void)
 {
-	m_Timer_10MS++;
+	// m_Timer_10MS++;    //yolanda20220524
 }
 void TIM4_IRQHandler_10MS(void)
 {
-	// m_Timer_10MS++;
+	 //m_Timer_10MS++;
 	for (int CHx = CH1; CHx <= CH2; CHx++)
 	{
 		if (Sys_Params.Channel_Param[CHx].Run_Mode_Params == TIMER && Sys_RT_Status.System_Option_Mode == AUTORUN_MODE)
@@ -131,7 +131,7 @@ void TIM4_IRQHandler_10MS(void)
 }
 void TIMx_IRQHandler_100MS(void)
 {
-	m_Timer_100MS++;
+	//m_Timer_100MS++;//yolanda 20220524
 }
 void TIMx_IRQHandler_1S(void)
 {
@@ -378,7 +378,11 @@ static void vStatus_Task(void *pvParameters)
 {
 	while (1)
 	{
-		DHTxx_Read_Data();
+		if(m_Timer_1S == 30)                 //yolanda20220524
+		{
+			m_Timer_1S = 0;
+			DHTxx_Read_Data();
+		}
 		SetPressureSensorTargetValue();
 
 		if (PURGE_LOW_STATUS == POWER_ON)
